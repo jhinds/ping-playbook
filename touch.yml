@@ -1,0 +1,8 @@
+---
+- name: Execute a Ping
+  hosts: localhost
+  gather_facts: False
+  connection: local
+  tasks:
+    - name: Execute a Ping
+      file: path=/test_file.txt
