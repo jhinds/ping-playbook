@@ -1,3 +1,3 @@
 # ping-playbook
 
-A test creates a test file.
+A test playbook that creates a test file.
