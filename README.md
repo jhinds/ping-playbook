@@ -1,3 +1,3 @@
 # ping-playbook
 
-A test playboko that executes a ping
+A test creates a test file.
