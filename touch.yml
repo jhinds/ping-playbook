@@ -5,4 +5,4 @@
   connection: local
   tasks:
     - name: Create a text file
-      file: path=/test_file.txt
+      shell: touch ~/test_file.txt
