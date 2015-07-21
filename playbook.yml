@@ -6,3 +6,5 @@
   tasks:
     - name: Create a text file
       shell: touch /tmp/test_file.txt
+    - name: Intentionally a bad command
+      shell: tacotuesay
