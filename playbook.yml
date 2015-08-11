@@ -1,8 +1,7 @@
 ---
 - name: Create a text file
-  hosts: localhost
+  hosts: all
   gather_facts: False
-  connection: local
   tasks:
     - name: Create a text file
       shell: touch /tmp/test_file.txt
