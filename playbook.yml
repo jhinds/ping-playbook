@@ -1,6 +1,6 @@
 ---
 - name: Create a text file
-  hosts: localhost
+  hosts: all
   gather_facts: False
   tasks:
     - name: Create a text file
