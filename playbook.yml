@@ -5,5 +5,9 @@
   tasks:
     - name: Create a text file
       shell: touch /tmp/test_file.txt
+      tags:
+        - taco
     - name: Intentionally a bad command
-      shell: tacotuesday
+      shell: echo hi
+      tags:
+        - salad
