@@ -4,7 +4,7 @@
   gather_facts: False
   tasks:
     - name: Create a text file
-    - file: path=/tmp/foo.conf state=touch
+      file: path=/tmp/foo.conf state=touch
 
     - name: Intentionally a bad command
       shell: echo hi
