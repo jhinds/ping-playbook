@@ -4,10 +4,10 @@
   gather_facts: False
   tasks:
     - name: Create a text file
-      shell: touch /tmp/test_file.txt
+      shell: touch /tmp/taco_test.txt
       tags:
         - taco
     - name: Intentionally a bad command
-      shell: echo hi
+      shell: touch /tmp/salad_test.txt
       tags:
         - salad
