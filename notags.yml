@@ -1,0 +1,10 @@
+---
+- name: Create a text file
+  hosts: all
+  gather_facts: False
+  tasks:
+    - name: Create a text file
+      shell: touch /tmp/test_file.txt
+
+    - name: Intentionally a bad command
+      shell: echo hi
