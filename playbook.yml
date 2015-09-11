@@ -3,11 +3,13 @@
   hosts: all
   gather_facts: False
   tasks:
-    - name: Create a text file
-      shell: touch /tmp/taco_test.txt
+    - name: Create a text file taco
+      file: src=/tmp/taco_test.txt
       tags:
         - taco
-    - name: Intentionally a bad command
-      shell: touch /tmp/salad_test.txt
+    - name: Create a test file salad
+      file: src=/tmp/salad_test.txt
       tags:
         - salad
+    - name: Echo
+      shell: echo $(date)
