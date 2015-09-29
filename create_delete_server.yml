@@ -1,0 +1,20 @@
+---
+- name: Create & Delete a Server
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  tasks:
+    - name: create a server
+      clc_server:
+        name: ittest
+        count: 1
+        group: 'test'
+        template: ubuntu-14-64
+        state: present
+      register: clc
+
+    - name: delete std server
+      clc_server:
+        server_ids:
+          - "{{ clc.servers[0].name }}"
+        state: absent
