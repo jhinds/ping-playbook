@@ -1,0 +1,13 @@
+---
+- name: One Billion Files
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: File Creation
+      shell: touch /tmp/file{{ item }}.txt; sleep 10
+      register: result
+      delay: 5
+      with_sequence: count=100
+
+    - debug: var=result

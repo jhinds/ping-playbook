@@ -1,0 +1,14 @@
+---
+- name: One Billion Echos
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Echo
+      shell: echo $(date)
+      register: result
+      until: result.stdout.find("Can't stop, won't stop.") != -1
+      delay: 5
+      retries: 1000000000
+
+    - debug: var=result
