@@ -5,7 +5,7 @@
   gather_facts: False
   tasks:
     - name: File Creation
-      shell: touch /tmp/file{{ item }}.txt; sleep 1
+      shell: touch /tmp/file{{ item }}.txt; sleep 5
       register: result
       with_sequence: count=1000000
 
