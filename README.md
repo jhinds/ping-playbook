@@ -1,3 +1,3 @@
 # test-playbook
 
-A test playbook for ansible that creates a test file.
+Random small ansible playbooks that I use for testing purposes.

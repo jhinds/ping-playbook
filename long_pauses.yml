@@ -1,0 +1,10 @@
+---
+- name: Do some long pauses
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Take a pause
+      pause: seconds=15 prompt="My 15 seconds of fame."
+    - name: Take a minute
+      pause: minutes=1 prompt="Take a minute and breathe"
