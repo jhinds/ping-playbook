@@ -1,10 +1,30 @@
 ---
-- name: Do some long pauses
+- name: A Long Running Playbook
   hosts: localhost
   connection: local
   gather_facts: False
   tasks:
-    - name: Take a pause
-      pause: seconds=15 prompt="My 15 seconds of fame."
-    - name: Take a minute
-      pause: minutes=1 prompt="Take a minute and breathe"
+    - name: Pause for 1 minute
+      pause: minutes=1 prompt="One minute pause"
+    - name: Pause for 2 minutes
+      pause: minutes=2 prompt="Two minute pause"
+    - name: Pause for 4 minutes
+      pause: minutes=4 prompt="Four minute pause"
+    - name: Pause for 8 minutes
+      pause: minutes=8 prompt="Eight minute pause"
+    - name: Pause for 16 minutes
+      pause: minutes=16 prompt="Sixteen minute pause"
+    - name: Pause for 32 minutes
+      pause: minutes=32 prompt="Thirty-Two minute pause"
+    - name: Pause for 64 minutes
+      pause: minutes=64 prompt="Sixty-Four minute pause"
+    - name: Pause for 128 minutes
+      pause: minutes=128 prompt="One Hundred and Twenty-Eight minute pause"
+    - name: Pause for 256 minutes
+      pause: minutes=256 prompt="Two Hundred and Fifty-Six minute pause"
+    - name: Pause for 512 minutes
+      pause: minutes=512 prompt="Five Hundred and Twelve minute pause"
+    - name: Pause for 1024 minutes
+      pause: minutes=1024 prompt="One Thousand and Twenty-Four minute pause"
+    - name: Pause for 2048 minutes
+      pause: minutes=2048 prompt="Two Thousand and Fourty-Eight minute pause"
