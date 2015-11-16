@@ -1,0 +1,8 @@
+---
+
+- hosts: localhost
+  gather_facts: false
+  remote_user: root
+  tasks:
+    - name: echo the word "worked"
+      debug: msg="worked"
